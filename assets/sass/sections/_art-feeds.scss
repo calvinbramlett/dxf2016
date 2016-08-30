@@ -1,0 +1,70 @@
+// art-feeds
+.art-feeds {
+  padding-top: 0;
+  &-header {
+    background-color: $gray;
+    background-image: url('../images/art-feeds_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 570px;
+    margin-bottom: -150px;
+    .container {
+      height: 420px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -o-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+  &-logo {
+    width: 200px;
+  }
+  .info-box {
+    background: $white;
+    &.box {
+      &-section-title {
+        h4 a {
+          color: $brand-primary;
+          font-size: 1.5em;
+          line-height: 1em;
+          letter-spacing: .15em;
+        }
+      }
+      &-text {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+      &-button {
+        border-top: 0;
+        width: 100%;
+      }
+    }
+    @media #{$screen-md} {
+      &.box {
+        &-text {
+          -webkit-flex: 1;
+          -moz-flex: 1;
+          -ms-flex: 1;
+          -o-flex: 1;
+          flex: 1;
+          border-right: none;
+          border-bottom: solid $border $black;
+          padding-bottom: 40px;
+        }
+        &-button {
+          width: auto;
+        }
+      }
+    }
+  }
+}

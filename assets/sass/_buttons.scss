@@ -1,0 +1,53 @@
+// BUTTONS.SCSS
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: $button-padding;
+  background: $black;
+  color: $white;
+  transition: all .2s ease;
+  text-transform: uppercase;
+  border: solid $border $black;
+  cursor: pointer;
+  letter-spacing: .15em;
+  font-size: .89em;
+  outline: none;
+  &:hover {
+    background: transparent;
+    color: $black;
+  }
+  &.btn-red {
+    background: $brand-primary;
+    border-color: $brand-primary;
+    position: relative;
+    &:before {
+      content: '';
+      background: url('../images/splatter.svg');
+      display: block;
+      width: 124px;
+      height: 134px;
+      position: absolute;
+      top: -39px;
+      right: -60px;
+      pointer-events: none;
+      transition: all .2s .03s ease;
+      z-index: -1;
+    }
+    &:hover {
+      background: transparent;
+      border-color: $white;
+      color: $white;
+      &:before {
+        opacity: 0;
+        transition: all .1s ease;
+      }
+    }
+  }
+}
+
+
+
+
+
+

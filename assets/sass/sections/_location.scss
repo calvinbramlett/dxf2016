@@ -1,0 +1,119 @@
+// location
+.location {
+  background-image: url('../images/black-bg.jpg');
+  color: $white;
+  background-attachment: fixed;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  &-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .wide-container {
+    position: relative;
+    height: 90%;
+    .text-block {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        background: url('../images/moon.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: -1;
+        top: -50px;
+        left: 50%;
+        margin-left: -130px;
+      }
+    }
+    .penguin {
+      position: absolute;
+      right: 30px;
+      bottom: -20px;
+      display: none;
+    }
+    .footer-text {
+      position: absolute;
+      bottom: 0;
+      font-weight: 100;
+      font-size: .7em;
+      max-width: 700px;
+      opacity: .5;
+      line-height: 1.5em;
+      display: none;
+    }
+  }
+  h2 {
+    color: $white;
+    opacity: .08;
+  }
+  @media #{$screen-sm} {
+    height: 700px;
+  }
+  @media #{$screen-md} {
+    &-image {
+      height: 70%;
+      width: auto;
+    }
+    .wide-container {
+      height: 100%;
+      .text-block:before {
+        top: -60px;
+        margin-left: -158px;
+      }
+      .penguin {
+        display: block;
+        width: 150px;
+      }
+      .footer-text { 
+        display: block;
+      }
+    }
+  }
+  @media #{$screen-lg} {
+    &-image {
+      height: 80%;
+      width: auto;
+    }
+    .wide-container .penguin {
+      width: auto;
+    }
+  }
+  @media #{$screen-xl} {
+    &-image {
+      height: 90%;
+    }
+    height: 1000px;
+    .wide-container {
+      width: 80%;
+      height: 80%;
+      .penguin {
+        right: 130px;
+      }
+    }
+  }
+  @media #{$screen-xxl} {
+    height: 1200px;
+  }
+}
