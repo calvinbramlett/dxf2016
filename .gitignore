@@ -2,3 +2,5 @@
 *.scssc
 
 *.rb
+
+.DS_Store
