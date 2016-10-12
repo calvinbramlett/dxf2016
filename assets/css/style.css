@@ -1149,19 +1149,18 @@ form .form-input .form-control:focus + .selected {
   background-attachment: fixed;
   color: #fff;
   position: relative;
-  height: 700px;
+  height: 600px;
 }
 /* line 10, ../sass/sections/_designers.scss */
 .designer-header-image {
   max-height: 100%;
-  margin-left: 20%;
 }
-/* line 13, ../sass/sections/_designers.scss */
+/* line 12, ../sass/sections/_designers.scss */
 .designer-header-image-container {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 75%;
   z-index: 10;
   display: -webkit-box;
   display: -moz-box;
@@ -1171,21 +1170,46 @@ form .form-input .form-control:focus + .selected {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
 }
-/* line 35, ../sass/sections/_designers.scss */
+@media only screen and (min-width: 768px) {
+  /* line 3, ../sass/sections/_designers.scss */
+  .designer-header {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 3, ../sass/sections/_designers.scss */
+  .designer-header {
+    height: 700px;
+  }
+  /* line 38, ../sass/sections/_designers.scss */
+  .designer-header-image {
+    margin-left: 20%;
+  }
+  /* line 40, ../sass/sections/_designers.scss */
+  .designer-header-image-container {
+    height: 100%;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+  }
+}
+/* line 51, ../sass/sections/_designers.scss */
 .designer-header .text-block h2 {
   color: rgba(84, 0, 0, 0.5);
 }
-/* line 38, ../sass/sections/_designers.scss */
+/* line 54, ../sass/sections/_designers.scss */
 .designer-header .text-block p {
   line-height: 2em;
 }
-/* line 42, ../sass/sections/_designers.scss */
+/* line 58, ../sass/sections/_designers.scss */
 .designer-header .container {
   position: relative;
   z-index: 20;
@@ -1194,9 +1218,9 @@ form .form-input .form-control:focus + .selected {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
@@ -1204,8 +1228,16 @@ form .form-input .form-control:focus + .selected {
   flex-direction: row;
   height: 100%;
 }
+@media only screen and (min-width: 768px) {
+  /* line 58, ../sass/sections/_designers.scss */
+  .designer-header .container {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
 
-/* line 66, ../sass/sections/_designers.scss */
+/* line 87, ../sass/sections/_designers.scss */
 .competitor {
   max-width: 1200px;
   margin: 0 auto;
@@ -1228,7 +1260,7 @@ form .form-input .form-control:focus + .selected {
   -ms-flex-direction: column;
   -o-flex-direction: column;
 }
-/* line 87, ../sass/sections/_designers.scss */
+/* line 108, ../sass/sections/_designers.scss */
 .competitor-profile {
   padding: 0 40px;
   display: -webkit-box;
@@ -1243,25 +1275,25 @@ form .form-input .form-control:focus + .selected {
   justify-content: center;
   order: -1;
 }
-/* line 100, ../sass/sections/_designers.scss */
+/* line 121, ../sass/sections/_designers.scss */
 .competitor-profile-image {
   display: block;
   position: relative;
   max-width: 500px;
 }
-/* line 106, ../sass/sections/_designers.scss */
+/* line 127, ../sass/sections/_designers.scss */
 .competitor-profile-image img + img {
   display: none;
 }
-/* line 110, ../sass/sections/_designers.scss */
+/* line 131, ../sass/sections/_designers.scss */
 .competitor-profile-image:hover img {
   display: none;
 }
-/* line 112, ../sass/sections/_designers.scss */
+/* line 133, ../sass/sections/_designers.scss */
 .competitor-profile-image:hover img + img {
   display: inline-block;
 }
-/* line 116, ../sass/sections/_designers.scss */
+/* line 137, ../sass/sections/_designers.scss */
 .competitor-profile-image:before {
   content: '';
   position: absolute;
@@ -1272,7 +1304,7 @@ form .form-input .form-control:focus + .selected {
   right: -20px;
   z-index: 10;
 }
-/* line 126, ../sass/sections/_designers.scss */
+/* line 147, ../sass/sections/_designers.scss */
 .competitor-profile-image:after {
   content: '';
   position: absolute;
@@ -1286,30 +1318,40 @@ form .form-input .form-control:focus + .selected {
   z-index: 10;
   right: -30px;
 }
-/* line 141, ../sass/sections/_designers.scss */
+/* line 162, ../sass/sections/_designers.scss */
 .competitor-bio {
   padding: 0 40px;
   flex: 1;
   max-width: 570px;
   text-align: center;
 }
-/* line 146, ../sass/sections/_designers.scss */
+/* line 167, ../sass/sections/_designers.scss */
 .competitor-bio h2 {
   font-family: 'neonoire';
   font-weight: 100;
-  font-size: 6em;
+  font-size: 4em;
   margin: 0;
   color: #E9E7E7;
   margin-top: 50px;
   margin-left: 20px;
 }
-/* line 155, ../sass/sections/_designers.scss */
+/* line 176, ../sass/sections/_designers.scss */
 .competitor-bio h3 {
   color: #C40000;
-  font-size: 4.5em;
+  font-size: 2.5em;
   margin: -.9em 0 0.2em 0;
 }
-/* line 161, ../sass/sections/_designers.scss */
+@media only screen and (min-width: 768px) {
+  /* line 182, ../sass/sections/_designers.scss */
+  .competitor-bio h2 {
+    font-size: 6em;
+  }
+  /* line 185, ../sass/sections/_designers.scss */
+  .competitor-bio h3 {
+    font-size: 4.5em;
+  }
+}
+/* line 190, ../sass/sections/_designers.scss */
 .competitor-social {
   display: -webkit-box;
   display: -moz-box;
@@ -1322,7 +1364,7 @@ form .form-input .form-control:focus + .selected {
   -o-justify-content: center;
   justify-content: center;
 }
-/* line 172, ../sass/sections/_designers.scss */
+/* line 201, ../sass/sections/_designers.scss */
 .competitor-social a {
   display: -webkit-box;
   display: -moz-box;
@@ -1339,7 +1381,7 @@ form .form-input .form-control:focus + .selected {
   width: 25px;
   height: 25px;
 }
-/* line 187, ../sass/sections/_designers.scss */
+/* line 216, ../sass/sections/_designers.scss */
 .competitor-social a:before {
   content: '';
   background: url("../images/splatter.svg");
@@ -1356,33 +1398,33 @@ form .form-input .form-control:focus + .selected {
   opacity: 0;
   transition: .2s ease;
 }
-/* line 204, ../sass/sections/_designers.scss */
+/* line 233, ../sass/sections/_designers.scss */
 .competitor-social a:hover:before {
   opacity: 1;
   background-size: auto;
 }
-/* line 209, ../sass/sections/_designers.scss */
+/* line 238, ../sass/sections/_designers.scss */
 .competitor-social a img {
   max-height: 100%;
 }
 @media only screen and (min-width: 992px) {
-  /* line 66, ../sass/sections/_designers.scss */
+  /* line 87, ../sass/sections/_designers.scss */
   .competitor {
     -webkit-flex-direction: row;
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     -o-flex-direction: row;
   }
-  /* line 219, ../sass/sections/_designers.scss */
+  /* line 248, ../sass/sections/_designers.scss */
   .competitor-profile {
     width: 50%;
     order: initial;
   }
-  /* line 222, ../sass/sections/_designers.scss */
+  /* line 251, ../sass/sections/_designers.scss */
   .competitor-profile-image {
     max-width: 800px;
   }
-  /* line 227, ../sass/sections/_designers.scss */
+  /* line 256, ../sass/sections/_designers.scss */
   .competitor-bio h2 {
     margin-top: 0;
   }
