@@ -5,3 +5,5 @@ Each year Few hosts Made By Few. An annual festival and conference that brings t
 [designedbyfew.com](http://www.designedbyfew.com)
 ## Awards
 [One Page Love](https://onepagelove.com/designed-by-few) - Most Loved
+[AWWWARDS](http://www.awwwards.com/sites/designed-by-few) - Honorable Mention
+[CSS Design Awards](http://www.cssdesignawards.com/sites/designed-by-few/29054/) - Special Kudos
