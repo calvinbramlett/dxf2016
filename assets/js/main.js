@@ -49,6 +49,18 @@ $(document).ready(function(){
 	  }
 	});
 
+	$('.toggle-awards').click(function() {
+	  if ($('.toggle-awards').hasClass('show-awards')) {
+	      $(this).removeClass('show-awards');
+	      $('.awards-on').addClass('hidden');
+	      $('.awards-off').removeClass('hidden');
+	  } else {
+	  		$(this).addClass('show-awards');
+	  		$('.awards-on').removeClass('hidden');
+	      $('.awards-off').addClass('hidden');
+	  }
+	});
+
 	$(document).on('mousemove', function(e){
 	  $('#mask-overlay').css({
 	    left:  e.pageX - 225,
